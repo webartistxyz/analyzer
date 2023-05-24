@@ -9,7 +9,7 @@ import chromeLauncher from 'chrome-launcher';
   try {
     const chrome = await chromeLauncher.launch({
       chromeFlags: ['--headless'],
-    //   chromePath: '/usr/bin/google-chrome',
+      chromePath: '/usr/bin/google-chrome',
     });
 
     const options = {
