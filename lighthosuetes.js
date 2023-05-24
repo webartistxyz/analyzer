@@ -28,8 +28,9 @@ import chromeLauncher from 'chrome-launcher';
 
     // res.json(runnerResult);
   } catch (error) {
+    await chrome.kill();
     console.error('An error occurred:', error);
-    res.status(500).json({ error: 'An error occurred' });
+    // res.status(500).json({ error: 'An error occurred' });
   }
 // });
 
